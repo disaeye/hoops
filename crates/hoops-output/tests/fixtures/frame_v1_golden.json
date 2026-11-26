@@ -1,0 +1,118 @@
+{
+  "tick": 10,
+  "quarter": 1,
+  "game_clock_ds": 7200,
+  "shot_clock_ds": 65535,
+  "game_phase": 1,
+  "possession_side": 2,
+  "score_home": 0,
+  "score_away": 0,
+  "ball_x_mm": 0,
+  "ball_y_mm": 0,
+  "ball_z_mm": 3619,
+  "ball_state": 4,
+  "ball_owner_slot": -1,
+  "ball_flags": 0,
+  "players": [
+    {
+      "roster_idx": 0,
+      "x_mm": -2900,
+      "y_mm": 0,
+      "vx_dm_s": 0,
+      "vy_dm_s": 0,
+      "facing_bin": 0,
+      "visible_action": 0,
+      "public_flags": 0
+    },
+    {
+      "roster_idx": 1,
+      "x_mm": -2400,
+      "y_mm": -575,
+      "vx_dm_s": 0,
+      "vy_dm_s": -45,
+      "facing_bin": 10,
+      "visible_action": 0,
+      "public_flags": 0
+    },
+    {
+      "roster_idx": 2,
+      "x_mm": -2400,
+      "y_mm": 575,
+      "vx_dm_s": 0,
+      "vy_dm_s": 45,
+      "facing_bin": 246,
+      "visible_action": 0,
+      "public_flags": 0
+    },
+    {
+      "roster_idx": 3,
+      "x_mm": -4011,
+      "y_mm": -1332,
+      "vx_dm_s": 2,
+      "vy_dm_s": -26,
+      "facing_bin": 13,
+      "visible_action": 0,
+      "public_flags": 0
+    },
+    {
+      "roster_idx": 4,
+      "x_mm": -650,
+      "y_mm": 0,
+      "vx_dm_s": 0,
+      "vy_dm_s": 0,
+      "facing_bin": 0,
+      "visible_action": 17,
+      "public_flags": 4
+    },
+    {
+      "roster_idx": 15,
+      "x_mm": 2900,
+      "y_mm": 0,
+      "vx_dm_s": 0,
+      "vy_dm_s": 0,
+      "facing_bin": 128,
+      "visible_action": 0,
+      "public_flags": 0
+    },
+    {
+      "roster_idx": 16,
+      "x_mm": 2400,
+      "y_mm": -2800,
+      "vx_dm_s": 0,
+      "vy_dm_s": 0,
+      "facing_bin": 93,
+      "visible_action": 0,
+      "public_flags": 0
+    },
+    {
+      "roster_idx": 17,
+      "x_mm": 2400,
+      "y_mm": 2800,
+      "vx_dm_s": 0,
+      "vy_dm_s": 0,
+      "facing_bin": 163,
+      "visible_action": 0,
+      "public_flags": 0
+    },
+    {
+      "roster_idx": 18,
+      "x_mm": 4133,
+      "y_mm": -1566,
+      "vx_dm_s": 0,
+      "vy_dm_s": 0,
+      "facing_bin": 113,
+      "visible_action": 0,
+      "public_flags": 0
+    },
+    {
+      "roster_idx": 19,
+      "x_mm": 650,
+      "y_mm": 0,
+      "vx_dm_s": 0,
+      "vy_dm_s": 0,
+      "facing_bin": 128,
+      "visible_action": 17,
+      "public_flags": 4
+    }
+  ]
+}

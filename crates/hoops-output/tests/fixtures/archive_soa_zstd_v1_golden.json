@@ -1,0 +1,1361 @@
+{
+  "events": [
+    {
+      "event_seq": 1,
+      "game_clock_ds": 7200,
+      "payload": {
+        "PeriodStarted": {
+          "arrow_side": 255,
+          "inbound_spot": 0,
+          "inbounding_side": 255,
+          "quarter": 1,
+          "start_mode": 0
+        }
+      },
+      "quarter": 1,
+      "shot_clock_ds": 65535,
+      "tick": 0
+    }
+  ],
+  "frames": [
+    {
+      "ball_flags": 0,
+      "ball_owner_slot": -1,
+      "ball_state": 5,
+      "ball_x_mm": 0,
+      "ball_y_mm": 0,
+      "ball_z_mm": 2500,
+      "game_clock_ds": 7200,
+      "game_phase": 0,
+      "players": [
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 0,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 1,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 2,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 3,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -4200,
+          "y_mm": 1600
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 4,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -650,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 15,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 16,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 17,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 18,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 4200,
+          "y_mm": -1600
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 19,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 650,
+          "y_mm": 0
+        }
+      ],
+      "possession_side": 2,
+      "quarter": 1,
+      "score_away": 0,
+      "score_home": 0,
+      "shot_clock_ds": 65535,
+      "tick": 0
+    },
+    {
+      "ball_flags": 0,
+      "ball_owner_slot": -1,
+      "ball_state": 5,
+      "ball_x_mm": 0,
+      "ball_y_mm": 0,
+      "ball_z_mm": 2500,
+      "game_clock_ds": 7200,
+      "game_phase": 0,
+      "players": [
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 0,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 221,
+          "public_flags": 0,
+          "roster_idx": 1,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": -8,
+          "x_mm": -2400,
+          "y_mm": 2725
+        },
+        {
+          "facing_bin": 35,
+          "public_flags": 0,
+          "roster_idx": 2,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 8,
+          "x_mm": -2400,
+          "y_mm": -2725
+        },
+        {
+          "facing_bin": 242,
+          "public_flags": 0,
+          "roster_idx": 3,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": -7,
+          "x_mm": -4195,
+          "y_mm": 1525
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 4,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -650,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 15,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 93,
+          "public_flags": 0,
+          "roster_idx": 16,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 163,
+          "public_flags": 0,
+          "roster_idx": 17,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 113,
+          "public_flags": 0,
+          "roster_idx": 18,
+          "visible_action": 0,
+          "vx_dm_s": -7,
+          "vy_dm_s": 3,
+          "x_mm": 4133,
+          "y_mm": -1566
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 19,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 650,
+          "y_mm": 0
+        }
+      ],
+      "possession_side": 2,
+      "quarter": 1,
+      "score_away": 0,
+      "score_home": 0,
+      "shot_clock_ds": 65535,
+      "tick": 1
+    },
+    {
+      "ball_flags": 0,
+      "ball_owner_slot": -1,
+      "ball_state": 5,
+      "ball_x_mm": 0,
+      "ball_y_mm": 0,
+      "ball_z_mm": 2500,
+      "game_clock_ds": 7200,
+      "game_phase": 0,
+      "players": [
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 0,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 223,
+          "public_flags": 0,
+          "roster_idx": 1,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": -15,
+          "x_mm": -2400,
+          "y_mm": 2575
+        },
+        {
+          "facing_bin": 33,
+          "public_flags": 0,
+          "roster_idx": 2,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 15,
+          "x_mm": -2400,
+          "y_mm": -2575
+        },
+        {
+          "facing_bin": 243,
+          "public_flags": 0,
+          "roster_idx": 3,
+          "visible_action": 0,
+          "vx_dm_s": 1,
+          "vy_dm_s": -15,
+          "x_mm": -4186,
+          "y_mm": 1375
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 4,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -650,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 15,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 93,
+          "public_flags": 0,
+          "roster_idx": 16,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 163,
+          "public_flags": 0,
+          "roster_idx": 17,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 113,
+          "public_flags": 0,
+          "roster_idx": 18,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 4133,
+          "y_mm": -1566
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 19,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 650,
+          "y_mm": 0
+        }
+      ],
+      "possession_side": 2,
+      "quarter": 1,
+      "score_away": 0,
+      "score_home": 0,
+      "shot_clock_ds": 65535,
+      "tick": 2
+    },
+    {
+      "ball_flags": 0,
+      "ball_owner_slot": -1,
+      "ball_state": 5,
+      "ball_x_mm": 0,
+      "ball_y_mm": 0,
+      "ball_z_mm": 2500,
+      "game_clock_ds": 7200,
+      "game_phase": 0,
+      "players": [
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 0,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 224,
+          "public_flags": 0,
+          "roster_idx": 1,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": -23,
+          "x_mm": -2400,
+          "y_mm": 2350
+        },
+        {
+          "facing_bin": 32,
+          "public_flags": 0,
+          "roster_idx": 2,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 23,
+          "x_mm": -2400,
+          "y_mm": -2350
+        },
+        {
+          "facing_bin": 245,
+          "public_flags": 0,
+          "roster_idx": 3,
+          "visible_action": 0,
+          "vx_dm_s": 1,
+          "vy_dm_s": -22,
+          "x_mm": -4171,
+          "y_mm": 1151
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 4,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -650,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 15,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 93,
+          "public_flags": 0,
+          "roster_idx": 16,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 163,
+          "public_flags": 0,
+          "roster_idx": 17,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 113,
+          "public_flags": 0,
+          "roster_idx": 18,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 4133,
+          "y_mm": -1566
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 19,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 650,
+          "y_mm": 0
+        }
+      ],
+      "possession_side": 2,
+      "quarter": 1,
+      "score_away": 0,
+      "score_home": 0,
+      "shot_clock_ds": 65535,
+      "tick": 3
+    },
+    {
+      "ball_flags": 0,
+      "ball_owner_slot": -1,
+      "ball_state": 5,
+      "ball_x_mm": 0,
+      "ball_y_mm": 0,
+      "ball_z_mm": 2500,
+      "game_clock_ds": 7200,
+      "game_phase": 0,
+      "players": [
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 0,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 227,
+          "public_flags": 0,
+          "roster_idx": 1,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": -30,
+          "x_mm": -2400,
+          "y_mm": 2050
+        },
+        {
+          "facing_bin": 29,
+          "public_flags": 0,
+          "roster_idx": 2,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 30,
+          "x_mm": -2400,
+          "y_mm": -2050
+        },
+        {
+          "facing_bin": 248,
+          "public_flags": 0,
+          "roster_idx": 3,
+          "visible_action": 0,
+          "vx_dm_s": 2,
+          "vy_dm_s": -30,
+          "x_mm": -4152,
+          "y_mm": 852
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 4,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -650,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 15,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 93,
+          "public_flags": 0,
+          "roster_idx": 16,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 163,
+          "public_flags": 0,
+          "roster_idx": 17,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 113,
+          "public_flags": 0,
+          "roster_idx": 18,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 4133,
+          "y_mm": -1566
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 19,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 650,
+          "y_mm": 0
+        }
+      ],
+      "possession_side": 2,
+      "quarter": 1,
+      "score_away": 0,
+      "score_home": 0,
+      "shot_clock_ds": 65535,
+      "tick": 4
+    },
+    {
+      "ball_flags": 0,
+      "ball_owner_slot": -1,
+      "ball_state": 4,
+      "ball_x_mm": 0,
+      "ball_y_mm": 0,
+      "ball_z_mm": 2500,
+      "game_clock_ds": 7200,
+      "game_phase": 0,
+      "players": [
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 0,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 231,
+          "public_flags": 0,
+          "roster_idx": 1,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": -38,
+          "x_mm": -2400,
+          "y_mm": 1675
+        },
+        {
+          "facing_bin": 25,
+          "public_flags": 0,
+          "roster_idx": 2,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 38,
+          "x_mm": -2400,
+          "y_mm": -1675
+        },
+        {
+          "facing_bin": 251,
+          "public_flags": 0,
+          "roster_idx": 3,
+          "visible_action": 0,
+          "vx_dm_s": 2,
+          "vy_dm_s": -37,
+          "x_mm": -4128,
+          "y_mm": 477
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 4,
+          "roster_idx": 4,
+          "visible_action": 17,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -650,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 15,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 93,
+          "public_flags": 0,
+          "roster_idx": 16,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 163,
+          "public_flags": 0,
+          "roster_idx": 17,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 113,
+          "public_flags": 0,
+          "roster_idx": 18,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 4133,
+          "y_mm": -1566
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 4,
+          "roster_idx": 19,
+          "visible_action": 17,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 650,
+          "y_mm": 0
+        }
+      ],
+      "possession_side": 2,
+      "quarter": 1,
+      "score_away": 0,
+      "score_home": 0,
+      "shot_clock_ds": 65535,
+      "tick": 5
+    },
+    {
+      "ball_flags": 0,
+      "ball_owner_slot": -1,
+      "ball_state": 4,
+      "ball_x_mm": 0,
+      "ball_y_mm": 0,
+      "ball_z_mm": 2920,
+      "game_clock_ds": 7200,
+      "game_phase": 0,
+      "players": [
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 0,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 237,
+          "public_flags": 0,
+          "roster_idx": 1,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": -45,
+          "x_mm": -2400,
+          "y_mm": 1225
+        },
+        {
+          "facing_bin": 19,
+          "public_flags": 0,
+          "roster_idx": 2,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 45,
+          "x_mm": -2400,
+          "y_mm": -1225
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 3,
+          "visible_action": 0,
+          "vx_dm_s": 3,
+          "vy_dm_s": -45,
+          "x_mm": -4099,
+          "y_mm": 28
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 4,
+          "roster_idx": 4,
+          "visible_action": 17,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -650,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 15,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 93,
+          "public_flags": 0,
+          "roster_idx": 16,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 163,
+          "public_flags": 0,
+          "roster_idx": 17,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 113,
+          "public_flags": 0,
+          "roster_idx": 18,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 4133,
+          "y_mm": -1566
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 4,
+          "roster_idx": 19,
+          "visible_action": 17,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 650,
+          "y_mm": 0
+        }
+      ],
+      "possession_side": 2,
+      "quarter": 1,
+      "score_away": 0,
+      "score_home": 0,
+      "shot_clock_ds": 65535,
+      "tick": 6
+    },
+    {
+      "ball_flags": 0,
+      "ball_owner_slot": -1,
+      "ball_state": 4,
+      "ball_x_mm": 0,
+      "ball_y_mm": 0,
+      "ball_z_mm": 3242,
+      "game_clock_ds": 7200,
+      "game_phase": 0,
+      "players": [
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 0,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 243,
+          "public_flags": 0,
+          "roster_idx": 1,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": -45,
+          "x_mm": -2400,
+          "y_mm": 775
+        },
+        {
+          "facing_bin": 13,
+          "public_flags": 0,
+          "roster_idx": 2,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 45,
+          "x_mm": -2400,
+          "y_mm": -775
+        },
+        {
+          "facing_bin": 4,
+          "public_flags": 0,
+          "roster_idx": 3,
+          "visible_action": 0,
+          "vx_dm_s": 3,
+          "vy_dm_s": -40,
+          "x_mm": -4073,
+          "y_mm": -375
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 4,
+          "roster_idx": 4,
+          "visible_action": 17,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -650,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 15,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 93,
+          "public_flags": 0,
+          "roster_idx": 16,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 163,
+          "public_flags": 0,
+          "roster_idx": 17,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 113,
+          "public_flags": 0,
+          "roster_idx": 18,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 4133,
+          "y_mm": -1566
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 4,
+          "roster_idx": 19,
+          "visible_action": 17,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 650,
+          "y_mm": 0
+        }
+      ],
+      "possession_side": 2,
+      "quarter": 1,
+      "score_away": 0,
+      "score_home": 0,
+      "shot_clock_ds": 65535,
+      "tick": 7
+    },
+    {
+      "ball_flags": 0,
+      "ball_owner_slot": -1,
+      "ball_state": 4,
+      "ball_x_mm": 0,
+      "ball_y_mm": 0,
+      "ball_z_mm": 3466,
+      "game_clock_ds": 7200,
+      "game_phase": 0,
+      "players": [
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 0,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 251,
+          "public_flags": 0,
+          "roster_idx": 1,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": -45,
+          "x_mm": -2400,
+          "y_mm": 325
+        },
+        {
+          "facing_bin": 5,
+          "public_flags": 0,
+          "roster_idx": 2,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 45,
+          "x_mm": -2400,
+          "y_mm": -325
+        },
+        {
+          "facing_bin": 7,
+          "public_flags": 0,
+          "roster_idx": 3,
+          "visible_action": 0,
+          "vx_dm_s": 2,
+          "vy_dm_s": -37,
+          "x_mm": -4049,
+          "y_mm": -747
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 4,
+          "roster_idx": 4,
+          "visible_action": 17,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -650,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 15,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 93,
+          "public_flags": 0,
+          "roster_idx": 16,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 163,
+          "public_flags": 0,
+          "roster_idx": 17,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 113,
+          "public_flags": 0,
+          "roster_idx": 18,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 4133,
+          "y_mm": -1566
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 4,
+          "roster_idx": 19,
+          "visible_action": 17,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 650,
+          "y_mm": 0
+        }
+      ],
+      "possession_side": 2,
+      "quarter": 1,
+      "score_away": 0,
+      "score_home": 0,
+      "shot_clock_ds": 65535,
+      "tick": 8
+    },
+    {
+      "ball_flags": 0,
+      "ball_owner_slot": -1,
+      "ball_state": 4,
+      "ball_x_mm": 0,
+      "ball_y_mm": 0,
+      "ball_z_mm": 3592,
+      "game_clock_ds": 7200,
+      "game_phase": 0,
+      "players": [
+        {
+          "facing_bin": 0,
+          "public_flags": 0,
+          "roster_idx": 0,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 2,
+          "public_flags": 0,
+          "roster_idx": 1,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": -45,
+          "x_mm": -2400,
+          "y_mm": -125
+        },
+        {
+          "facing_bin": 254,
+          "public_flags": 0,
+          "roster_idx": 2,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 45,
+          "x_mm": -2400,
+          "y_mm": 125
+        },
+        {
+          "facing_bin": 11,
+          "public_flags": 0,
+          "roster_idx": 3,
+          "visible_action": 0,
+          "vx_dm_s": 2,
+          "vy_dm_s": -32,
+          "x_mm": -4028,
+          "y_mm": -1068
+        },
+        {
+          "facing_bin": 0,
+          "public_flags": 4,
+          "roster_idx": 4,
+          "visible_action": 17,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": -650,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 0,
+          "roster_idx": 15,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2900,
+          "y_mm": 0
+        },
+        {
+          "facing_bin": 93,
+          "public_flags": 0,
+          "roster_idx": 16,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": -2800
+        },
+        {
+          "facing_bin": 163,
+          "public_flags": 0,
+          "roster_idx": 17,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 2400,
+          "y_mm": 2800
+        },
+        {
+          "facing_bin": 113,
+          "public_flags": 0,
+          "roster_idx": 18,
+          "visible_action": 0,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 4133,
+          "y_mm": -1566
+        },
+        {
+          "facing_bin": 128,
+          "public_flags": 4,
+          "roster_idx": 19,
+          "visible_action": 17,
+          "vx_dm_s": 0,
+          "vy_dm_s": 0,
+          "x_mm": 650,
+          "y_mm": 0
+        }
+      ],
+      "possession_side": 2,
+      "quarter": 1,
+      "score_away": 0,
+      "score_home": 0,
+      "shot_clock_ds": 65535,
+      "tick": 9
+    }
+  ],
+  "header": {
+    "away_team_id": "mile_high_hub",
+    "court_length_mm": 28651,
+    "court_width_mm": 15240,
+    "debug_frame_size_bytes": 0,
+    "def_dict": [],
+    "format_version": 1,
+    "frame_size_bytes": 124,
+    "home_team_id": "boston_five_out",
+    "play_dict": [],
+    "roster": [
+      {
+        "display_name": "Jrue Holiday Arch",
+        "jersey_number_code": 4,
+        "player_id": "bos_p01",
+        "roster_idx": 0
+      },
+      {
+        "display_name": "Derrick White Arch",
+        "jersey_number_code": 9,
+        "player_id": "bos_p02",
+        "roster_idx": 1
+      },
+      {
+        "display_name": "Jaylen Brown Arch",
+        "jersey_number_code": 7,
+        "player_id": "bos_p03",
+        "roster_idx": 2
+      },
+      {
+        "display_name": "Jayson Tatum Arch",
+        "jersey_number_code": 0,
+        "player_id": "bos_p04",
+        "roster_idx": 3
+      },
+      {
+        "display_name": "Kristaps Porzingis Arch",
+        "jersey_number_code": 8,
+        "player_id": "bos_p05",
+        "roster_idx": 4
+      },
+      {
+        "display_name": "Payton Pritchard Arch",
+        "jersey_number_code": 11,
+        "player_id": "bos_p06",
+        "roster_idx": 5
+      },
+      {
+        "display_name": "Sam Hauser Arch",
+        "jersey_number_code": 30,
+        "player_id": "bos_p07",
+        "roster_idx": 6
+      },
+      {
+        "display_name": "Al Horford Arch",
+        "jersey_number_code": 42,
+        "player_id": "bos_p08",
+        "roster_idx": 7
+      },
+      {
+        "display_name": "Luke Kornet Arch",
+        "jersey_number_code": 40,
+        "player_id": "bos_p09",
+        "roster_idx": 8
+      },
+      {
+        "display_name": "Xavier Tillman Arch",
+        "jersey_number_code": 26,
+        "player_id": "bos_p10",
+        "roster_idx": 9
+      },
+      {
+        "display_name": "Oshae Brissett Arch",
+        "jersey_number_code": 12,
+        "player_id": "bos_p11",
+        "roster_idx": 10
+      },
+      {
+        "display_name": "Neemias Queta Arch",
+        "jersey_number_code": 88,
+        "player_id": "bos_p12",
+        "roster_idx": 11
+      },
+      {
+        "display_name": "Jamal Murray Arch",
+        "jersey_number_code": 27,
+        "player_id": "den_p01",
+        "roster_idx": 15
+      },
+      {
+        "display_name": "Kentavious Caldwell Arch",
+        "jersey_number_code": 5,
+        "player_id": "den_p02",
+        "roster_idx": 16
+      },
+      {
+        "display_name": "Michael Porter Arch",
+        "jersey_number_code": 1,
+        "player_id": "den_p03",
+        "roster_idx": 17
+      },
+      {
+        "display_name": "Aaron Gordon Arch",
+        "jersey_number_code": 50,
+        "player_id": "den_p04",
+        "roster_idx": 18
+      },
+      {
+        "display_name": "Nikola Jokic Arch",
+        "jersey_number_code": 15,
+        "player_id": "den_p05",
+        "roster_idx": 19
+      },
+      {
+        "display_name": "Reggie Jackson Arch",
+        "jersey_number_code": 7,
+        "player_id": "den_p06",
+        "roster_idx": 20
+      },
+      {
+        "display_name": "Christian Braun Arch",
+        "jersey_number_code": 0,
+        "player_id": "den_p07",
+        "roster_idx": 21
+      },
+      {
+        "display_name": "Peyton Watson Arch",
+        "jersey_number_code": 8,
+        "player_id": "den_p08",
+        "roster_idx": 22
+      },
+      {
+        "display_name": "DeAndre Jordan Arch",
+        "jersey_number_code": 6,
+        "player_id": "den_p09",
+        "roster_idx": 23
+      },
+      {
+        "display_name": "Justin Holiday Arch",
+        "jersey_number_code": 9,
+        "player_id": "den_p10",
+        "roster_idx": 24
+      },
+      {
+        "display_name": "Zeke Nnaji Arch",
+        "jersey_number_code": 22,
+        "player_id": "den_p11",
+        "roster_idx": 25
+      },
+      {
+        "display_name": "Julian Strawther Arch",
+        "jersey_number_code": 3,
+        "player_id": "den_p12",
+        "roster_idx": 26
+      }
+    ],
+    "roster_count": 30,
+    "stream_visibility": "PublicOnly"
+  }
+}

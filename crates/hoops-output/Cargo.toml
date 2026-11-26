@@ -1,0 +1,16 @@
+[package]
+name = "hoops-output"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+hoops-core = { path = "../hoops-core" }
+hoops-config = { path = "../hoops-config" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+libm = { workspace = true }
+zstd = { workspace = true }
+zstd-sys = { workspace = true }
+crc32fast = { workspace = true }
+sha2 = { workspace = true }
+thiserror = { workspace = true }
