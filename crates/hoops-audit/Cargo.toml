@@ -1,0 +1,15 @@
+[package]
+name = "hoops-audit"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+hoops-core = { path = "../hoops-core" }
+hoops-config = { path = "../hoops-config" }
+hoops-output = { path = "../hoops-output" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+sha2 = { workspace = true }
+libm = { workspace = true }
+rayon = { workspace = true }
+thiserror = { workspace = true }
