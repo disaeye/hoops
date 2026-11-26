@@ -1,0 +1,67 @@
+rule_id = "fiba_2024"
+
+[court]
+length_m = 28.0
+width_m = 15.0
+rim_offset_m = 1.575
+rim_height_m = 3.05
+three_arc_radius_m = 6.75
+corner_three_dist_m = 6.60
+paint_width_m = 4.90
+paint_length_m = 5.80
+restricted_area_radius_m = 1.25
+oob_runoff_m = 3.0
+
+[roster]
+max_team_players = 12
+fiba_sub_clock_run_reentry_rule = true
+
+[clocks]
+quarter_sec = 600
+ot_sec = 300
+stop_on_made_reg_last_sec = 0
+stop_on_made_final_ot_sec = 120
+min_catch_and_shoot_ds = 3
+live_rebound_03s_enabled = false
+free_throw_timer_ds = 50
+shot_clock_airball_defense_control_continues = true
+shot_clock_policy = "FibaArt29"
+full_shot_clock_ds = 240
+reset_shot_clock_ds = 140
+defensive_3sec_enabled = false
+back_to_basket_zone = 0
+closely_guarded_5sec_enabled = true
+
+[fouls]
+foul_out_limit = 5
+offensive_foul_counts_toward_team_fouls = true
+regulation_bonus_threshold = 5
+ot_team_foul_reset_each = false
+ot_bonus_threshold = 5
+goaltend_mode = 1
+possession_start_mode = 1
+short_handed_rule = 1
+
+[timeouts]
+team_to_ds = 600
+mandatory_to_ds = 0
+quarter_break_ds = 1200
+ot_break_ds = 1200
+halftime_ds = 9000
+review_dead_time_ds = 300
+q_total_to = 5
+q4_enter_cap = 3
+q4_l3m_cap = 2
+h1_to = 2
+h2_to = 3
+h2_l2m_cap = 2
+ot_to = 1
+mandatory_first_charge_policy = "HomeFirst"
+live_ball_player_to_allowed = false
+to_between_fts_allowed = false
+
+[challenges]
+mode = 2
+max_base = 1
+bonus_on_first_success = false
+requires_and_charges_timeout = false

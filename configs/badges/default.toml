@@ -1,0 +1,47 @@
+[[badges]]
+badge_id = "b01_catch_shoot"
+hook = 0
+op = 0
+value = 0.14
+
+[[badges]]
+badge_id = "b02_corner_specialist"
+hook = 1
+op = 0
+value = 0.16
+
+[[badges]]
+badge_id = "b03_rim_finisher"
+hook = 2
+op = 0
+value = 0.15
+
+[[badges]]
+badge_id = "b04_dimer"
+hook = 3
+op = 1
+value = 1.12
+
+[[badges]]
+badge_id = "b05_clamp_perimeter"
+hook = 4
+op = 1
+value = 1.10
+
+[[badges]]
+badge_id = "b06_anchor_rim"
+hook = 5
+op = 1
+value = 1.15
+
+[[badges]]
+badge_id = "b07_clutch_shot"
+hook = 6
+op = 0
+value = 0.18
+
+[[badges]]
+badge_id = "b08_boxout_beast"
+hook = 7
+op = 1
+value = 1.14

@@ -1,0 +1,314 @@
+team_id = "twin_towers_grit"
+
+[tactics]
+pace = 48
+transition_push = 46
+default_spacing = 68
+primary_handlers = [0, 1, 2]
+play_weights = [
+  ["post_iso", 0.30],
+  ["horns_flare", 0.25],
+  ["spread_pnr", 0.25],
+  ["spain_pnr", 0.15],
+  ["ato_quick_three", 0.05],
+]
+orb_crash_count = 2
+defensive_gameplan_id = "blitz_heavy"
+sag_off_3pt_threshold = 68
+foul_up_three_policy = "Under6sIfBonus"
+matchup_overrides = []
+full_court_press_clutch = true
+
+[[tactics.rotation_script.stints]]
+quarter_mask = 15
+start_game_clock_ds = 7200
+end_game_clock_ds = 3600
+target_lineup_ranks = [0, 1, 2, 3, 4]
+
+[[tactics.rotation_script.stints]]
+quarter_mask = 15
+start_game_clock_ds = 3600
+end_game_clock_ds = 1200
+target_lineup_ranks = [5, 1, 6, 7, 3]
+
+[[tactics.rotation_script.stints]]
+quarter_mask = 8
+start_game_clock_ds = 2400
+end_game_clock_ds = 0
+target_lineup_ranks = [0, 1, 2, 3, 4]
+
+[[players]]
+player_id = "min_p01"
+display_name = "Mike Conley Arch"
+jersey_number_code = 10
+badges = ["b01_catch_shoot", "b04_dimer"]
+[players.physical]
+height_cm = 183.0
+wingspan_cm = 198.0
+standing_reach_cm = 244.0
+weight_kg = 79.0
+age = 36
+dominant_hand = 1
+display_position = 1
+[players.tendencies]
+zone_weights = [0.18, 0.14, 0.12, 0.20, 0.36]
+drive_vs_pullup = 0.38
+pass_vs_shoot = 0.64
+pnr_roll_vs_pop = 0.20
+crash_orb = 0.14
+gamble_steal = 0.26
+[players.attributes]
+values = [76,36,84,52,70,84,80,87,91,88,82,78,86,90,86,89,88,82,52,78,56,48,78,86,80,82,50,62,64,76,76,78,70,64,82,84,78,90]
+
+[[players]]
+player_id = "min_p02"
+display_name = "Anthony Edwards Arch"
+jersey_number_code = 5
+badges = ["b03_rim_finisher", "b05_clamp_perimeter", "b07_clutch_shot"]
+[players.physical]
+height_cm = 193.0
+wingspan_cm = 206.0
+standing_reach_cm = 259.0
+weight_kg = 102.0
+age = 22
+dominant_hand = 0
+display_position = 2
+[players.tendencies]
+zone_weights = [0.36, 0.16, 0.14, 0.10, 0.24]
+drive_vs_pullup = 0.64
+pass_vs_shoot = 0.38
+pnr_roll_vs_pop = 0.25
+crash_orb = 0.22
+gamble_steal = 0.32
+[players.attributes]
+values = [88,92,82,66,86,84,82,81,84,80,86,86,84,78,86,78,78,80,62,88,70,66,84,80,84,82,60,72,72,92,93,90,86,95,90,90,84,86]
+
+[[players]]
+player_id = "min_p03"
+display_name = "Jaden McDaniels Arch"
+jersey_number_code = 3
+badges = ["b05_clamp_perimeter", "b02_corner_specialist"]
+[players.physical]
+height_cm = 206.0
+wingspan_cm = 213.0
+standing_reach_cm = 272.0
+weight_kg = 84.0
+age = 23
+dominant_hand = 0
+display_position = 3
+[players.tendencies]
+zone_weights = [0.36, 0.14, 0.10, 0.26, 0.14]
+drive_vs_pullup = 0.50
+pass_vs_shoot = 0.44
+pnr_roll_vs_pop = 0.40
+crash_orb = 0.32
+gamble_steal = 0.28
+[players.attributes]
+values = [76,78,74,58,68,78,72,75,76,78,70,72,76,76,72,70,70,80,64,93,78,76,82,86,88,88,64,70,70,84,84,84,74,84,88,88,84,78]
+
+[[players]]
+player_id = "min_p04"
+display_name = "Karl-Anthony Towns Arch"
+jersey_number_code = 32
+badges = ["b01_catch_shoot", "b03_rim_finisher"]
+[players.physical]
+height_cm = 213.0
+wingspan_cm = 222.0
+standing_reach_cm = 287.0
+weight_kg = 112.0
+age = 28
+dominant_hand = 0
+display_position = 4
+[players.tendencies]
+zone_weights = [0.36, 0.14, 0.12, 0.12, 0.26]
+drive_vs_pullup = 0.48
+pass_vs_shoot = 0.42
+pnr_roll_vs_pop = 0.32
+crash_orb = 0.45
+gamble_steal = 0.18
+[players.attributes]
+values = [84,80,86,84,82,84,82,88,87,88,78,86,90,76,72,76,74,78,80,68,78,72,62,76,74,68,78,84,82,72,72,72,84,74,84,82,76,80]
+
+[[players]]
+player_id = "min_p05"
+display_name = "Rudy Gobert Arch"
+jersey_number_code = 27
+badges = ["b06_anchor_rim", "b08_boxout_beast"]
+[players.physical]
+height_cm = 216.0
+wingspan_cm = 236.0
+standing_reach_cm = 292.0
+weight_kg = 117.0
+age = 31
+dominant_hand = 0
+display_position = 5
+[players.tendencies]
+zone_weights = [0.92, 0.06, 0.02, 0.00, 0.00]
+drive_vs_pullup = 0.65
+pass_vs_shoot = 0.56
+pnr_roll_vs_pop = 0.99
+crash_orb = 0.90
+gamble_steal = 0.14
+[players.attributes]
+values = [76,90,76,66,80,78,42,20,64,20,25,64,30,82,50,66,64,78,90,70,96,95,62,92,80,72,92,94,94,68,68,68,90,82,88,90,88,84]
+
+[[players]]
+player_id = "min_p06"
+display_name = "Nickeil Alexander Arch"
+jersey_number_code = 9
+badges = ["b01_catch_shoot", "b05_clamp_perimeter"]
+[players.physical]
+height_cm = 196.0
+wingspan_cm = 207.0
+standing_reach_cm = 262.0
+weight_kg = 93.0
+age = 25
+dominant_hand = 0
+display_position = 2
+[players.tendencies]
+zone_weights = [0.22, 0.10, 0.12, 0.26, 0.30]
+drive_vs_pullup = 0.40
+pass_vs_shoot = 0.52
+pnr_roll_vs_pop = 0.22
+crash_orb = 0.20
+gamble_steal = 0.30
+[players.attributes]
+values = [74,60,74,52,66,80,74,82,80,84,74,74,82,80,78,78,76,82,58,86,64,62,82,84,84,84,56,66,68,82,82,84,74,76,88,88,84,80]
+
+[[players]]
+player_id = "min_p07"
+display_name = "Naz Reid Arch"
+jersey_number_code = 11
+badges = ["b01_catch_shoot", "b03_rim_finisher"]
+[players.physical]
+height_cm = 206.0
+wingspan_cm = 221.0
+standing_reach_cm = 277.0
+weight_kg = 120.0
+age = 24
+dominant_hand = 0
+display_position = 5
+[players.tendencies]
+zone_weights = [0.36, 0.12, 0.12, 0.16, 0.24]
+drive_vs_pullup = 0.50
+pass_vs_shoot = 0.36
+pnr_roll_vs_pop = 0.40
+crash_orb = 0.44
+gamble_steal = 0.22
+[players.attributes]
+values = [82,82,82,74,74,82,76,84,76,85,78,80,86,78,72,70,70,80,74,74,80,78,68,78,76,74,72,78,78,76,76,76,86,78,86,88,82,82]
+
+[[players]]
+player_id = "min_p08"
+display_name = "Kyle Anderson Arch"
+jersey_number_code = 1
+badges = ["b04_dimer", "b08_boxout_beast"]
+[players.physical]
+height_cm = 206.0
+wingspan_cm = 220.0
+standing_reach_cm = 274.0
+weight_kg = 104.0
+age = 30
+dominant_hand = 0
+display_position = 4
+[players.tendencies]
+zone_weights = [0.46, 0.28, 0.12, 0.08, 0.06]
+drive_vs_pullup = 0.56
+pass_vs_shoot = 0.72
+pnr_roll_vs_pop = 0.65
+crash_orb = 0.44
+gamble_steal = 0.32
+[players.attributes]
+values = [76,54,82,74,72,82,74,60,72,62,62,72,64,86,80,86,86,80,76,82,80,74,82,88,82,78,68,76,78,66,66,70,80,64,84,84,82,86]
+
+[[players]]
+player_id = "min_p09"
+display_name = "Monte Morris Arch"
+jersey_number_code = 23
+badges = ["b04_dimer"]
+[players.physical]
+height_cm = 188.0
+wingspan_cm = 194.0
+standing_reach_cm = 248.0
+weight_kg = 83.0
+age = 28
+dominant_hand = 0
+display_position = 1
+[players.tendencies]
+zone_weights = [0.20, 0.20, 0.18, 0.14, 0.28]
+drive_vs_pullup = 0.40
+pass_vs_shoot = 0.68
+pnr_roll_vs_pop = 0.20
+crash_orb = 0.14
+gamble_steal = 0.24
+[players.attributes]
+values = [74,40,78,52,66,82,78,80,84,82,78,74,80,86,84,86,84,78,52,72,54,46,74,78,74,76,50,60,62,76,76,78,70,68,84,82,76,84]
+
+[[players]]
+player_id = "min_p10"
+display_name = "Luka Garza Arch"
+jersey_number_code = 55
+badges = ["b08_boxout_beast"]
+[players.physical]
+height_cm = 208.0
+wingspan_cm = 217.0
+standing_reach_cm = 279.0
+weight_kg = 110.0
+age = 25
+dominant_hand = 0
+display_position = 5
+[players.tendencies]
+zone_weights = [0.62, 0.14, 0.08, 0.06, 0.10]
+drive_vs_pullup = 0.48
+pass_vs_shoot = 0.34
+pnr_roll_vs_pop = 0.78
+crash_orb = 0.78
+gamble_steal = 0.14
+[players.attributes]
+values = [74,72,78,80,74,78,72,72,72,74,64,72,74,74,56,64,62,74,80,54,68,62,52,66,64,60,82,76,78,62,62,62,84,64,80,86,86,74]
+
+[[players]]
+player_id = "min_p11"
+display_name = "Josh Minott Arch"
+jersey_number_code = 8
+badges = []
+[players.physical]
+height_cm = 203.0
+wingspan_cm = 213.0
+standing_reach_cm = 269.0
+weight_kg = 93.0
+age = 21
+dominant_hand = 0
+display_position = 4
+[players.tendencies]
+zone_weights = [0.60, 0.12, 0.08, 0.12, 0.08]
+drive_vs_pullup = 0.65
+pass_vs_shoot = 0.45
+pnr_roll_vs_pop = 0.80
+crash_orb = 0.68
+gamble_steal = 0.24
+[players.attributes]
+values = [74,82,70,58,68,74,62,64,68,66,60,64,68,70,66,66,64,76,66,76,72,70,70,74,74,72,74,74,72,82,82,80,76,88,84,86,84,72]
+
+[[players]]
+player_id = "min_p12"
+display_name = "Jordan McLaughlin Arch"
+jersey_number_code = 6
+badges = ["b04_dimer"]
+[players.physical]
+height_cm = 183.0
+wingspan_cm = 191.0
+standing_reach_cm = 241.0
+weight_kg = 84.0
+age = 27
+dominant_hand = 0
+display_position = 1
+[players.tendencies]
+zone_weights = [0.24, 0.14, 0.14, 0.20, 0.28]
+drive_vs_pullup = 0.45
+pass_vs_shoot = 0.68
+pnr_roll_vs_pop = 0.20
+crash_orb = 0.16
+gamble_steal = 0.30
+[players.attributes]
+values = [72,38,74,48,64,80,72,76,76,78,72,70,76,82,82,84,82,78,50,74,52,44,78,78,76,78,52,58,60,82,82,84,68,70,84,84,82,78]

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "exp_id": 11,
+  "exp_id_hex": "0x484F4F505331360B",
+  "split_algorithm": "sha256_le(game_id || ':' || exp_id) mod 10",
+  "splits": {
+    "calibration_buckets": [0, 1, 2, 3, 4, 5],
+    "holdout_eval_buckets": [6, 7, 8, 9]
+  },
+  "datasets": {
+    "nba_2023_24_pbp": {
+      "total_games": 1230,
+      "calibration_games": 738,
+      "holdout_eval_games": 492,
+      "minimum_holdout_games": 200
+    },
+    "micro_tracking": {
+      "window_hz": 10,
+      "max_c_geom_rmse": 0.12,
+      "max_epv_ks_p_threshold": 0.05
+    }
+  }
+}

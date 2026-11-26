@@ -1,0 +1,57 @@
+gameplan_id = "zone_2_3"
+base_scheme = 3
+switch_max_height_diff_cm = 16.0
+help_shrink_level = 80
+protect_roles = ["foul_trouble_core"]
+hide_on_weakest_shooter = true
+pre_switch_enabled = false
+pre_switch_trigger_radius_m = 1.6
+scram_switch_enabled = false
+peel_switch_enabled = true
+
+[[role_defs]]
+name = "foul_trouble_core"
+[role_defs.expr]
+kind = "Cmp"
+subject = 4
+metric_key = "defender_fouls"
+op = 3
+val = 4.0
+
+[[pnr_rules]]
+rule_id = "zone_paint_drop"
+coverage = "Drop"
+on_ball_action = 0
+help_rule = 2
+[[pnr_rules.predicates]]
+kind = "Cmp"
+subject = 2
+metric_key = "three_point"
+op = 0
+val = 76.0
+
+[[pnr_rules]]
+rule_id = "zone_bump_pop"
+coverage = "HighShowAndRecover"
+on_ball_action = 1
+help_rule = 2
+[[pnr_rules.predicates]]
+kind = "Cmp"
+subject = 2
+metric_key = "three_point"
+op = 3
+val = 76.0
+
+[[adaptation_triggers]]
+watch_coverage = "Drop"
+min_possessions = 6
+prior_weight = 10.0
+prior_ppp = 1.02
+escalate_ppp_threshold = 1.16
+deescalate_ppp_threshold = 0.94
+revert_if_escalated_ppp_exceeds = 1.28
+revert_min_possessions = 4
+deescalate_min_possessions = 5
+threat_absent_three_point_lt = 62
+cooldown_possessions = 2
+escalate_to_coverage = "Ice"

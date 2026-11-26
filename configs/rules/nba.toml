@@ -1,0 +1,69 @@
+rule_id = "nba_2023_24"
+
+[court]
+length_m = 28.6512
+width_m = 15.24
+rim_offset_m = 1.6002
+rim_height_m = 3.048
+three_arc_radius_m = 7.239
+corner_three_dist_m = 6.7056
+paint_width_m = 4.8768
+paint_length_m = 5.7912
+restricted_area_radius_m = 1.2192
+oob_runoff_m = 3.0
+
+[roster]
+max_team_players = 15
+fiba_sub_clock_run_reentry_rule = false
+
+[clocks]
+quarter_sec = 720
+ot_sec = 300
+stop_on_made_reg_last_sec = 60
+stop_on_made_final_ot_sec = 120
+min_catch_and_shoot_ds = 3
+live_rebound_03s_enabled = true
+free_throw_timer_ds = 100
+shot_clock_airball_defense_control_continues = false
+shot_clock_policy = "NbaRule7"
+full_shot_clock_ds = 240
+reset_shot_clock_ds = 140
+defensive_3sec_enabled = true
+back_to_basket_zone = 1
+closely_guarded_5sec_enabled = false
+
+[fouls]
+foul_out_limit = 6
+offensive_foul_counts_toward_team_fouls = false
+regulation_bonus_threshold = 5
+regulation_l2m_bonus_threshold = 2
+ot_team_foul_reset_each = true
+ot_bonus_threshold = 4
+ot_l2m_bonus_threshold = 2
+goaltend_mode = 0
+possession_start_mode = 0
+short_handed_rule = 0
+
+[timeouts]
+team_to_ds = 750
+mandatory_to_ds = 1650
+quarter_break_ds = 1500
+ot_break_ds = 1500
+halftime_ds = 9000
+review_dead_time_ds = 300
+q_total_to = 7
+q4_enter_cap = 4
+q4_l3m_cap = 2
+h1_to = 4
+h2_to = 4
+h2_l2m_cap = 2
+ot_to = 2
+mandatory_first_charge_policy = "HomeFirst"
+live_ball_player_to_allowed = true
+to_between_fts_allowed = true
+
+[challenges]
+mode = 1
+max_base = 1
+bonus_on_first_success = true
+requires_and_charges_timeout = true

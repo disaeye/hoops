@@ -1,0 +1,48 @@
+gameplan_id = "blitz_heavy"
+base_scheme = 2
+switch_max_height_diff_cm = 10.0
+help_shrink_level = 72
+protect_roles = []
+hide_on_weakest_shooter = false
+pre_switch_enabled = true
+pre_switch_trigger_radius_m = 1.8
+scram_switch_enabled = false
+peel_switch_enabled = true
+
+[[pnr_rules]]
+rule_id = "trap_primary_creator"
+coverage = "Blitz"
+on_ball_action = 3
+help_rule = 2
+[[pnr_rules.predicates]]
+kind = "Cmp"
+subject = 1
+metric_key = "ball_handle"
+op = 3
+val = 75.0
+
+[[pnr_rules]]
+rule_id = "ice_corner_fallback"
+coverage = "Ice"
+on_ball_action = 1
+help_rule = 1
+[[pnr_rules.predicates]]
+kind = "Cmp"
+subject = 1
+metric_key = "ball_handle"
+op = 0
+val = 75.0
+
+[[adaptation_triggers]]
+watch_coverage = "Blitz"
+min_possessions = 6
+prior_weight = 10.0
+prior_ppp = 1.05
+escalate_ppp_threshold = 1.25
+deescalate_ppp_threshold = 0.98
+revert_if_escalated_ppp_exceeds = 1.35
+revert_min_possessions = 4
+deescalate_min_possessions = 5
+threat_absent_three_point_lt = 60
+cooldown_possessions = 3
+escalate_to_coverage = "Switch"

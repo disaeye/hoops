@@ -1,0 +1,314 @@
+team_id = "mile_high_hub"
+
+[tactics]
+pace = 56
+transition_push = 54
+default_spacing = 78
+primary_handlers = [4, 0, 1]
+play_weights = [
+  ["high_post_hub", 0.35],
+  ["spread_pnr", 0.25],
+  ["split_action", 0.20],
+  ["horns_flare", 0.15],
+  ["ato_quick_three", 0.05],
+]
+orb_crash_count = 2
+defensive_gameplan_id = "drop_base"
+sag_off_3pt_threshold = 65
+foul_up_three_policy = "Under6sIfBonus"
+matchup_overrides = []
+full_court_press_clutch = false
+
+[[tactics.rotation_script.stints]]
+quarter_mask = 15
+start_game_clock_ds = 7200
+end_game_clock_ds = 3600
+target_lineup_ranks = [0, 1, 2, 3, 4]
+
+[[tactics.rotation_script.stints]]
+quarter_mask = 15
+start_game_clock_ds = 3600
+end_game_clock_ds = 1200
+target_lineup_ranks = [5, 6, 2, 7, 8]
+
+[[tactics.rotation_script.stints]]
+quarter_mask = 8
+start_game_clock_ds = 2400
+end_game_clock_ds = 0
+target_lineup_ranks = [0, 1, 2, 3, 4]
+
+[[players]]
+player_id = "den_p01"
+display_name = "Jamal Murray Arch"
+jersey_number_code = 27
+badges = ["b04_dimer", "b07_clutch_shot"]
+[players.physical]
+height_cm = 193.0
+wingspan_cm = 200.0
+standing_reach_cm = 254.0
+weight_kg = 98.0
+age = 27
+dominant_hand = 0
+display_position = 1
+[players.tendencies]
+zone_weights = [0.22, 0.20, 0.20, 0.14, 0.24]
+drive_vs_pullup = 0.42
+pass_vs_shoot = 0.54
+pnr_roll_vs_pop = 0.25
+crash_orb = 0.18
+gamble_steal = 0.22
+[players.attributes]
+values = [82,56,84,66,76,84,86,84,86,84,88,88,86,82,86,85,84,82,58,76,60,52,72,78,76,78,54,66,68,82,82,84,78,76,86,82,76,88]
+
+[[players]]
+player_id = "den_p02"
+display_name = "Kentavious Caldwell Arch"
+jersey_number_code = 5
+badges = ["b01_catch_shoot", "b02_corner_specialist", "b05_clamp_perimeter"]
+[players.physical]
+height_cm = 196.0
+wingspan_cm = 203.0
+standing_reach_cm = 259.0
+weight_kg = 93.0
+age = 31
+dominant_hand = 0
+display_position = 2
+[players.tendencies]
+zone_weights = [0.20, 0.12, 0.14, 0.28, 0.26]
+drive_vs_pullup = 0.35
+pass_vs_shoot = 0.42
+pnr_roll_vs_pop = 0.20
+crash_orb = 0.16
+gamble_steal = 0.34
+[players.attributes]
+values = [74,56,74,52,68,82,76,84,84,87,74,76,82,82,72,74,72,86,58,88,64,58,84,84,86,84,54,64,66,84,84,84,74,76,88,88,82,82]
+
+[[players]]
+player_id = "den_p03"
+display_name = "Michael Porter Arch"
+jersey_number_code = 1
+badges = ["b01_catch_shoot", "b08_boxout_beast"]
+[players.physical]
+height_cm = 208.0
+wingspan_cm = 213.0
+standing_reach_cm = 274.0
+weight_kg = 99.0
+age = 25
+dominant_hand = 0
+display_position = 3
+[players.tendencies]
+zone_weights = [0.22, 0.14, 0.16, 0.18, 0.30]
+drive_vs_pullup = 0.32
+pass_vs_shoot = 0.32
+pnr_roll_vs_pop = 0.35
+crash_orb = 0.42
+gamble_steal = 0.18
+[players.attributes]
+values = [78,76,78,60,66,82,82,86,82,89,80,86,90,76,68,66,66,82,62,72,72,66,60,76,74,70,74,82,78,78,78,76,78,82,84,80,74,78]
+
+[[players]]
+player_id = "den_p04"
+display_name = "Aaron Gordon Arch"
+jersey_number_code = 50
+badges = ["b03_rim_finisher", "b05_clamp_perimeter", "b08_boxout_beast"]
+[players.physical]
+height_cm = 203.0
+wingspan_cm = 213.0
+standing_reach_cm = 271.0
+weight_kg = 107.0
+age = 28
+dominant_hand = 0
+display_position = 4
+[players.tendencies]
+zone_weights = [0.64, 0.12, 0.08, 0.10, 0.06]
+drive_vs_pullup = 0.72
+pass_vs_shoot = 0.56
+pnr_roll_vs_pop = 0.90
+crash_orb = 0.72
+gamble_steal = 0.22
+[players.attributes]
+values = [82,92,80,76,78,82,70,68,70,70,62,72,72,82,72,78,78,86,78,84,82,76,70,86,80,78,80,82,82,80,80,78,88,92,86,86,82,82]
+
+[[players]]
+player_id = "den_p05"
+display_name = "Nikola Jokic Arch"
+jersey_number_code = 15
+badges = ["b03_rim_finisher", "b04_dimer", "b07_clutch_shot", "b08_boxout_beast"]
+[players.physical]
+height_cm = 211.0
+wingspan_cm = 221.0
+standing_reach_cm = 282.0
+weight_kg = 129.0
+age = 29
+dominant_hand = 0
+display_position = 5
+[players.tendencies]
+zone_weights = [0.46, 0.26, 0.12, 0.04, 0.12]
+drive_vs_pullup = 0.44
+pass_vs_shoot = 0.68
+pnr_roll_vs_pop = 0.58
+crash_orb = 0.68
+gamble_steal = 0.26
+[players.attributes]
+values = [88,68,96,95,86,92,88,80,84,82,80,90,84,95,84,97,98,86,88,68,82,72,78,88,74,68,88,94,90,64,65,68,94,64,88,92,82,96]
+
+[[players]]
+player_id = "den_p06"
+display_name = "Reggie Jackson Arch"
+jersey_number_code = 7
+badges = ["b04_dimer"]
+[players.physical]
+height_cm = 188.0
+wingspan_cm = 213.0
+standing_reach_cm = 258.0
+weight_kg = 94.0
+age = 33
+dominant_hand = 0
+display_position = 1
+[players.tendencies]
+zone_weights = [0.28, 0.18, 0.18, 0.12, 0.24]
+drive_vs_pullup = 0.48
+pass_vs_shoot = 0.52
+pnr_roll_vs_pop = 0.25
+crash_orb = 0.16
+gamble_steal = 0.22
+[players.attributes]
+values = [76,52,78,52,68,78,76,77,80,78,80,76,82,74,82,78,76,76,54,70,56,48,68,72,72,72,52,60,60,78,78,78,72,74,82,84,72,78]
+
+[[players]]
+player_id = "den_p07"
+display_name = "Christian Braun Arch"
+jersey_number_code = 0
+badges = ["b05_clamp_perimeter"]
+[players.physical]
+height_cm = 198.0
+wingspan_cm = 199.0
+standing_reach_cm = 259.0
+weight_kg = 100.0
+age = 23
+dominant_hand = 0
+display_position = 2
+[players.tendencies]
+zone_weights = [0.46, 0.12, 0.10, 0.18, 0.14]
+drive_vs_pullup = 0.65
+pass_vs_shoot = 0.46
+pnr_roll_vs_pop = 0.45
+crash_orb = 0.48
+gamble_steal = 0.28
+[players.attributes]
+values = [78,82,74,56,72,78,68,74,74,76,66,70,76,78,74,74,74,84,64,84,68,60,76,82,82,82,70,74,74,86,86,84,80,86,88,88,88,80]
+
+[[players]]
+player_id = "den_p08"
+display_name = "Peyton Watson Arch"
+jersey_number_code = 8
+badges = ["b06_anchor_rim"]
+[players.physical]
+height_cm = 201.0
+wingspan_cm = 215.0
+standing_reach_cm = 268.0
+weight_kg = 91.0
+age = 21
+dominant_hand = 0
+display_position = 4
+[players.tendencies]
+zone_weights = [0.46, 0.16, 0.10, 0.14, 0.14]
+drive_vs_pullup = 0.64
+pass_vs_shoot = 0.44
+pnr_roll_vs_pop = 0.70
+crash_orb = 0.45
+gamble_steal = 0.28
+[players.attributes]
+values = [74,82,72,58,70,76,68,68,70,70,64,68,72,72,70,70,70,78,64,82,78,86,74,82,82,78,66,72,70,84,84,84,74,88,86,86,84,74]
+
+[[players]]
+player_id = "den_p09"
+display_name = "DeAndre Jordan Arch"
+jersey_number_code = 6
+badges = ["b08_boxout_beast"]
+[players.physical]
+height_cm = 211.0
+wingspan_cm = 229.0
+standing_reach_cm = 288.0
+weight_kg = 120.0
+age = 35
+dominant_hand = 1
+display_position = 5
+[players.tendencies]
+zone_weights = [0.88, 0.08, 0.02, 0.01, 0.01]
+drive_vs_pullup = 0.60
+pass_vs_shoot = 0.55
+pnr_roll_vs_pop = 0.98
+crash_orb = 0.85
+gamble_steal = 0.12
+[players.attributes]
+values = [72,88,70,62,72,76,45,25,52,25,30,62,35,74,48,66,64,74,84,54,80,78,52,76,66,60,88,86,88,64,62,62,90,78,76,84,74,78]
+
+[[players]]
+player_id = "den_p10"
+display_name = "Justin Holiday Arch"
+jersey_number_code = 9
+badges = ["b02_corner_specialist"]
+[players.physical]
+height_cm = 198.0
+wingspan_cm = 213.0
+standing_reach_cm = 264.0
+weight_kg = 82.0
+age = 34
+dominant_hand = 0
+display_position = 3
+[players.tendencies]
+zone_weights = [0.16, 0.10, 0.12, 0.30, 0.32]
+drive_vs_pullup = 0.25
+pass_vs_shoot = 0.42
+pnr_roll_vs_pop = 0.20
+crash_orb = 0.20
+gamble_steal = 0.26
+[players.attributes]
+values = [70,56,72,48,62,78,72,81,78,83,70,74,80,78,68,70,70,80,56,78,62,56,74,80,78,78,54,62,64,76,76,76,68,72,82,84,78,80]
+
+[[players]]
+player_id = "den_p11"
+display_name = "Zeke Nnaji Arch"
+jersey_number_code = 22
+badges = []
+[players.physical]
+height_cm = 206.0
+wingspan_cm = 218.0
+standing_reach_cm = 273.0
+weight_kg = 109.0
+age = 23
+dominant_hand = 0
+display_position = 4
+[players.tendencies]
+zone_weights = [0.62, 0.14, 0.08, 0.10, 0.06]
+drive_vs_pullup = 0.55
+pass_vs_shoot = 0.48
+pnr_roll_vs_pop = 0.85
+crash_orb = 0.65
+gamble_steal = 0.18
+[players.attributes]
+values = [72,78,72,62,68,74,62,64,68,66,56,66,68,72,56,64,62,72,76,74,76,74,64,74,76,72,76,74,74,76,76,74,80,78,84,84,80,72]
+
+[[players]]
+player_id = "den_p12"
+display_name = "Julian Strawther Arch"
+jersey_number_code = 3
+badges = ["b01_catch_shoot"]
+[players.physical]
+height_cm = 198.0
+wingspan_cm = 206.0
+standing_reach_cm = 262.0
+weight_kg = 93.0
+age = 21
+dominant_hand = 0
+display_position = 2
+[players.tendencies]
+zone_weights = [0.22, 0.14, 0.12, 0.22, 0.30]
+drive_vs_pullup = 0.38
+pass_vs_shoot = 0.38
+pnr_roll_vs_pop = 0.20
+crash_orb = 0.18
+gamble_steal = 0.22
+[players.attributes]
+values = [74,56,76,50,66,78,74,80,78,82,76,74,82,72,74,70,70,80,54,70,56,50,66,72,72,72,52,62,62,78,78,78,72,74,84,84,74,74]

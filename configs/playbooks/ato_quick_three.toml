@@ -1,0 +1,99 @@
+play_id = "ato_quick_three"
+min_shot_clock_ds = 30
+allow_mirror = true
+role_priority = [1, 0, 4, 2, 3]
+
+[[slot_weights]]
+role_slot = 0
+terms = [["pass_accuracy", 0.50], ["pass_vision", 0.50]]
+
+[[slot_weights]]
+role_slot = 1
+terms = [["three_point", 0.45], ["catch_and_shoot", 0.45], ["off_ball_movement", 0.10]]
+
+[[slot_weights]]
+role_slot = 2
+terms = [["three_point", 0.50], ["catch_and_shoot", 0.50]]
+
+[[slot_weights]]
+role_slot = 3
+terms = [["three_point", 0.50], ["off_ball_movement", 0.50]]
+
+[[slot_weights]]
+role_slot = 4
+terms = [["screen_setting", 0.65], ["strength", 0.35]]
+
+[[initial_positions]]
+anchor_kind = 3
+side_tag = 2
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 7
+side_tag = 1
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 1
+side_tag = 2
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 3
+side_tag = 1
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 5
+side_tag = 1
+dx_m = 0.0
+dy_m = 0.0
+
+# Phase 1: Stagger screeners align near strong Elbow while Role 1 sets up in dunker spot
+[[phases]]
+base_epv = 1.12
+max_duration_ds = 18
+exit_trigger_kind = 3
+exit_target_role = 1
+exit_fallback_ds = 15
+actions = [
+  [1, 3, 2, 1, 0.0, 0.0, 0.95],
+  [4, 7, 1, 3, 0.0, 0.0, 0.98],
+  [0, 1, 2, 0, 0.0, 0.0, 0.86],
+  [0, 5, 1, 1, 0.0, 0.0, 0.95],
+  [0, 5, 1, 1, -1.2, 0.8, 0.95],
+]
+
+# Phase 2: Double stagger! Roles 3 & 4 screen for shooter Role 1 curling to strong Wing3/Slot
+[[phases]]
+base_epv = 1.18
+max_duration_ds = 22
+exit_trigger_kind = 1
+exit_target_role = 4
+exit_fallback_ds = 18
+actions = [
+  [1, 4, 0, 1, -0.2, 0.0, 0.96],
+  [4, 2, 1, 0, -0.3, 0.0, 1.00],
+  [0, 1, 2, 0, 0.0, 0.0, 0.86],
+  [2, 3, 1, 1, 0.0, 0.0, 0.96],
+  [2, 2, 1, 1, 0.0, 0.0, 0.96],
+]
+
+# Phase 3: Slip counter if 3PT denied (Role 4 rolls downhill, Role 3 pops to TopKey)
+[[phases]]
+base_epv = 1.13
+max_duration_ds = 35
+exit_trigger_kind = 2
+exit_target_role = 1
+exit_fallback_ds = 26
+actions = [
+  [0, 3, 2, 1, 0.0, 0.0, 0.90],
+  [1, 2, 1, 4, 0.0, 0.0, 0.96],
+  [4, 2, 2, 1, 0.0, 0.0, 0.90],
+  [0, 4, 0, 1, 0.0, 0.0, 0.94],
+  [3, 0, 0, 1, -0.7, 0.0, 0.98],
+]

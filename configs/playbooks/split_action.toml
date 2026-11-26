@@ -1,0 +1,114 @@
+play_id = "split_action"
+min_shot_clock_ds = 75
+allow_mirror = true
+role_priority = [4, 1, 2, 0, 3]
+
+[[slot_weights]]
+role_slot = 0
+terms = [["three_point", 0.40], ["off_ball_movement", 0.35], ["pass_accuracy", 0.25]]
+
+[[slot_weights]]
+role_slot = 1
+terms = [["three_point", 0.50], ["catch_and_shoot", 0.50]]
+
+[[slot_weights]]
+role_slot = 2
+terms = [["three_point", 0.45], ["catch_and_shoot", 0.30], ["off_ball_movement", 0.25]]
+
+[[slot_weights]]
+role_slot = 3
+terms = [["screen_setting", 0.40], ["three_point", 0.35], ["off_ball_movement", 0.25]]
+
+[[slot_weights]]
+role_slot = 4
+terms = [["post_control", 0.35], ["pass_accuracy", 0.35], ["pass_vision", 0.30]]
+
+[[initial_positions]]
+anchor_kind = 3
+side_tag = 2
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 2
+side_tag = 1
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 1
+side_tag = 1
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 7
+side_tag = 2
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 5
+side_tag = 1
+dx_m = 0.0
+dy_m = 0.0
+
+# Phase 1: Entry pass to strong Elbow hub (Role 4)
+[[phases]]
+base_epv = 1.08
+max_duration_ds = 28
+exit_trigger_kind = 2
+exit_target_role = 4
+exit_fallback_ds = 22
+actions = [
+  [0, 3, 2, 4, 0.0, 0.0, 0.90],
+  [0, 2, 1, 4, 0.0, 0.0, 0.90],
+  [0, 1, 1, 1, 0.0, 0.0, 0.90],
+  [0, 7, 2, 4, 0.0, 0.0, 0.88],
+  [1, 5, 1, 1, 0.0, 0.0, 0.94],
+]
+
+# Phase 2: Classic Warriors Split Cut (Role 1 screens for Role 2, Role 3 dives baseline)
+[[phases]]
+base_epv = 1.14
+max_duration_ds = 35
+exit_trigger_kind = 1
+exit_target_role = 1
+exit_fallback_ds = 26
+actions = [
+  [0, 3, 2, 4, 0.0, 0.0, 0.88],
+  [2, 2, 1, 2, 0.0, 0.0, 0.95],
+  [4, 3, 1, 1, 0.0, 0.0, 0.96],
+  [4, 7, 2, 4, 0.2, 0.0, 0.92],
+  [1, 5, 1, 2, 0.0, 0.0, 0.90],
+]
+
+# Phase 3: Split screener slips toward rim while cutter pops to strong Wing3
+[[phases]]
+base_epv = 1.13
+max_duration_ds = 35
+exit_trigger_kind = 2
+exit_target_role = 2
+exit_fallback_ds = 28
+actions = [
+  [0, 2, 2, 2, 0.0, 0.0, 0.90],
+  [3, 0, 0, 4, -0.7, 0.0, 0.96],
+  [0, 2, 1, 4, 0.0, 0.0, 0.96],
+  [0, 1, 2, 2, 0.0, 0.0, 0.86],
+  [0, 5, 1, 2, 0.0, 0.0, 0.90],
+]
+
+# Phase 4: Weakside pin-down counter (Role 3 screens for Role 0)
+[[phases]]
+base_epv = 1.10
+max_duration_ds = 45
+exit_trigger_kind = 1
+exit_target_role = 3
+exit_fallback_ds = 35
+actions = [
+  [4, 3, 2, 3, 0.0, 0.0, 0.95],
+  [0, 1, 1, 0, 0.0, 0.0, 0.85],
+  [1, 2, 1, 0, 0.0, 0.0, 0.92],
+  [2, 2, 2, 0, 0.0, 0.0, 0.95],
+  [0, 7, 1, 0, 0.0, 0.0, 0.88],
+]

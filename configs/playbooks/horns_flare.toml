@@ -1,0 +1,114 @@
+play_id = "horns_flare"
+min_shot_clock_ds = 80
+allow_mirror = true
+role_priority = [0, 3, 4, 1, 2]
+
+[[slot_weights]]
+role_slot = 0
+terms = [["ball_handle", 0.45], ["pass_accuracy", 0.35], ["pass_vision", 0.20]]
+
+[[slot_weights]]
+role_slot = 1
+terms = [["three_point", 0.50], ["catch_and_shoot", 0.50]]
+
+[[slot_weights]]
+role_slot = 2
+terms = [["three_point", 0.45], ["off_ball_movement", 0.55]]
+
+[[slot_weights]]
+role_slot = 3
+terms = [["mid_range", 0.40], ["three_point", 0.35], ["screen_setting", 0.25]]
+
+[[slot_weights]]
+role_slot = 4
+terms = [["screen_setting", 0.55], ["offensive_rebound", 0.45]]
+
+[[initial_positions]]
+anchor_kind = 4
+side_tag = 0
+dx_m = -0.3
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 1
+side_tag = 1
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 1
+side_tag = 2
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 5
+side_tag = 2
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 5
+side_tag = 1
+dx_m = 0.0
+dy_m = 0.0
+
+# Phase 1: Horns entry pass to strong-side Elbow hub (Role 4)
+[[phases]]
+base_epv = 1.07
+max_duration_ds = 28
+exit_trigger_kind = 2
+exit_target_role = 4
+exit_fallback_ds = 22
+actions = [
+  [0, 4, 0, 4, -0.2, 0.0, 0.92],
+  [0, 1, 1, 4, 0.0, 0.0, 0.85],
+  [0, 1, 2, 3, 0.0, 0.0, 0.88],
+  [0, 5, 2, 2, 0.0, 0.0, 0.90],
+  [1, 5, 1, 0, 0.0, 0.0, 0.94],
+]
+
+# Phase 2: Strong-side DHO (Role 4 -> Role 0) + Weak-side Flare Screen (Role 3 for Role 2)
+[[phases]]
+base_epv = 1.13
+max_duration_ds = 35
+exit_trigger_kind = 1
+exit_target_role = 3
+exit_fallback_ds = 26
+actions = [
+  [5, 5, 1, 4, 0.0, 0.0, 0.96],
+  [0, 1, 1, 0, 0.0, 0.0, 0.85],
+  [4, 2, 2, 3, -0.4, 0.0, 0.96],
+  [2, 2, 2, 2, 0.0, 0.0, 0.95],
+  [5, 5, 1, 0, 0.0, 0.0, 0.94],
+]
+
+# Phase 3: Weak-wing Flare catch + strong elbow big rolls to rim
+[[phases]]
+base_epv = 1.12
+max_duration_ds = 35
+exit_trigger_kind = 2
+exit_target_role = 2
+exit_fallback_ds = 28
+actions = [
+  [0, 3, 1, 2, 0.0, 0.0, 0.90],
+  [0, 1, 1, 2, 0.0, 0.0, 0.85],
+  [1, 2, 2, 3, 0.0, 0.0, 0.96],
+  [4, 7, 2, 2, 0.0, 0.0, 0.90],
+  [3, 0, 0, 0, -0.7, 0.0, 0.96],
+]
+
+# Phase 4: Weakside secondary ball screen (Role 3 sets screen for Role 2)
+[[phases]]
+base_epv = 1.09
+max_duration_ds = 45
+exit_trigger_kind = 1
+exit_target_role = 3
+exit_fallback_ds = 35
+actions = [
+  [0, 2, 1, 2, 0.0, 0.0, 0.86],
+  [0, 1, 1, 2, 0.0, 0.0, 0.85],
+  [1, 2, 2, 3, 0.0, 0.0, 0.94],
+  [2, 2, 2, 2, 0.0, 0.0, 0.96],
+  [0, 7, 1, 2, 0.0, 0.0, 0.88],
+]

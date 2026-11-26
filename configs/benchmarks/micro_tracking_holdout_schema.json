@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MicroTrackingHoldoutV1",
+  "type": "object",
+  "required": ["schema_version", "tick_hz", "metrics"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "tick_hz": { "type": "integer", "const": 10 },
+    "metrics": {
+      "type": "object",
+      "required": [
+        "defender_distance_m_mean",
+        "c_geom_mean",
+        "weak_side_help_ratio",
+        "shot_clock_usage_mean_ds"
+      ]
+    }
+  }
+}

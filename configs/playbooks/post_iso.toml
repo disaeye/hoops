@@ -1,0 +1,99 @@
+play_id = "post_iso"
+min_shot_clock_ds = 80
+allow_mirror = true
+role_priority = [4, 0, 1, 2, 3]
+
+[[slot_weights]]
+role_slot = 0
+terms = [["pass_accuracy", 0.45], ["three_point", 0.35], ["ball_handle", 0.20]]
+
+[[slot_weights]]
+role_slot = 1
+terms = [["three_point", 0.55], ["catch_and_shoot", 0.45]]
+
+[[slot_weights]]
+role_slot = 2
+terms = [["three_point", 0.55], ["catch_and_shoot", 0.45]]
+
+[[slot_weights]]
+role_slot = 3
+terms = [["three_point", 0.50], ["off_ball_movement", 0.50]]
+
+[[slot_weights]]
+role_slot = 4
+terms = [["post_control", 0.50], ["close_touch", 0.30], ["strength", 0.20]]
+
+[[initial_positions]]
+anchor_kind = 2
+side_tag = 1
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 1
+side_tag = 2
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 2
+side_tag = 2
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 4
+side_tag = 0
+dx_m = 0.0
+dy_m = 0.0
+
+[[initial_positions]]
+anchor_kind = 6
+side_tag = 1
+dx_m = 0.0
+dy_m = 0.0
+
+# Phase 1: Entry pass to LowPost anchor (Role 4) while spacing 4-out
+[[phases]]
+base_epv = 1.03
+max_duration_ds = 30
+exit_trigger_kind = 2
+exit_target_role = 4
+exit_fallback_ds = 24
+actions = [
+  [0, 2, 1, 4, 0.0, 0.0, 0.88],
+  [0, 4, 0, 4, 0.0, 0.0, 0.86],
+  [0, 1, 2, 4, 0.0, 0.0, 0.86],
+  [0, 3, 2, 4, 0.0, 0.0, 0.88],
+  [1, 6, 1, 0, 0.0, 0.0, 0.94],
+]
+
+# Phase 2: PostBackdown attack + Laker cut by passer (Role 0) + weakside pin-down (Role 3 for Role 1)
+[[phases]]
+base_epv = 1.09
+max_duration_ds = 38
+exit_trigger_kind = 0
+exit_target_role = 4
+exit_fallback_ds = 35
+actions = [
+  [4, 7, 1, 4, 0.2, 0.0, 0.94],
+  [4, 2, 1, 4, 0.0, 0.0, 0.92],
+  [0, 1, 2, 4, 0.0, 0.0, 0.86],
+  [2, 2, 2, 1, 0.0, 0.0, 0.94],
+  [1, 6, 1, 0, 0.0, 0.0, 0.96],
+]
+
+# Phase 3: Kick-out swing & relocate around perimeter
+[[phases]]
+base_epv = 1.08
+max_duration_ds = 40
+exit_trigger_kind = 0
+exit_target_role = 1
+exit_fallback_ds = 32
+actions = [
+  [0, 1, 2, 1, 0.0, 0.0, 0.88],
+  [0, 4, 0, 4, 0.0, 0.0, 0.92],
+  [0, 2, 2, 1, 0.0, 0.0, 0.90],
+  [0, 2, 1, 1, 0.0, 0.0, 0.90],
+  [3, 0, 0, 1, -0.7, 0.0, 0.92],
+]

@@ -1,0 +1,57 @@
+schema_version = 1
+exp_id = 11
+split_rule = "bucket = u64_le(sha256(format!(\"{game_id}:{exp_id}\"))[0..8]) % 10; bucket < 6 => calibration, else => holdout"
+
+[calibration_targets_nba]
+pace_poss_per_48 = [96.0, 102.0]
+orb_rate = [0.22, 0.28]
+tov_rate = [0.12, 0.16]
+ftr_fta_per_fga = [0.23, 0.30]
+three_pt_share = [0.36, 0.44]
+efg_pct = [0.52, 0.57]
+ppg_per_team = [110.0, 118.0]
+
+[calibration_targets_fiba]
+pace_poss_per_40 = [69.0, 76.0]
+orb_rate = [0.24, 0.31]
+tov_rate = [0.13, 0.18]
+ftr_fta_per_fga = [0.24, 0.32]
+three_pt_share = [0.33, 0.42]
+efg_pct = [0.50, 0.55]
+ppg_per_team = [77.0, 86.0]
+
+[[sample_games]]
+game_id = "0022300001"
+bucket = 8
+split = "holdout"
+home_abbr = "DEN"
+away_abbr = "LAL"
+home_pts = 119
+away_pts = 107
+
+[[sample_games]]
+game_id = "0022300002"
+bucket = 1
+split = "calibration"
+home_abbr = "GSW"
+away_abbr = "PHX"
+home_pts = 104
+away_pts = 108
+
+[[sample_games]]
+game_id = "0022300003"
+bucket = 7
+split = "holdout"
+home_abbr = "BOS"
+away_abbr = "NYK"
+home_pts = 108
+away_pts = 104
+
+[[sample_games]]
+game_id = "0022300004"
+bucket = 3
+split = "calibration"
+home_abbr = "MEM"
+away_abbr = "NOP"
+home_pts = 104
+away_pts = 111

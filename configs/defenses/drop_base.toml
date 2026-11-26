@@ -1,0 +1,69 @@
+gameplan_id = "drop_base"
+base_scheme = 0
+switch_max_height_diff_cm = 12.0
+help_shrink_level = 55
+protect_roles = ["weak_handler"]
+hide_on_weakest_shooter = true
+pre_switch_enabled = true
+pre_switch_trigger_radius_m = 2.0
+scram_switch_enabled = false
+peel_switch_enabled = true
+
+[[role_defs]]
+name = "weak_handler"
+[role_defs.expr]
+kind = "Cmp"
+subject = 0
+metric_key = "three_point"
+op = 0
+val = 74.0
+
+[[pnr_rules]]
+rule_id = "ice_side_drop"
+coverage = "Drop"
+on_ball_action = 0
+help_rule = 0
+[[pnr_rules.predicates]]
+kind = "Cmp"
+subject = 1
+metric_key = "three_point"
+op = 0
+val = 82.0
+
+[[pnr_rules]]
+rule_id = "switch_like_size"
+coverage = "Switch"
+on_ball_action = 1
+help_rule = 0
+[[pnr_rules.predicates]]
+kind = "Cmp"
+subject = 4
+metric_key = "matchup_height_diff_cm"
+op = 1
+val = 8.0
+
+[[pnr_rules]]
+rule_id = "high_show_elite_shooter"
+coverage = "HighShowAndRecover"
+on_ball_action = 1
+help_rule = 1
+[[pnr_rules.predicates]]
+kind = "Cmp"
+subject = 1
+metric_key = "three_point"
+op = 3
+val = 82.0
+
+[[adaptation_triggers]]
+watch_coverage = "Drop"
+min_possessions = 6
+prior_weight = 10.0
+prior_ppp = 1.02
+escalate_ppp_threshold = 1.18
+deescalate_ppp_threshold = 0.96
+revert_if_escalated_ppp_exceeds = 1.28
+revert_min_possessions = 4
+deescalate_min_possessions = 5
+threat_absent_three_point_lt = 65
+cooldown_possessions = 2
+escalate_to_coverage = "HighShowAndRecover"
