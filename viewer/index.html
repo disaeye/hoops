@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1017" />
+  <title>HOOPS 篮球战术模拟与复盘控制台</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-meta">
+      <div class="brand">
+        <span class="badge-live">10Hz 确定性引擎</span>
+        <h1>HOOPS 篮球战术模拟</h1>
+      </div>
+      <div class="server-pill">
+        <select id="role-select" aria-label="当前操作身份" title="选择当前操作身份" disabled>
+          <option value="home">主队教练</option>
+          <option value="away">客队教练</option>
+          <option value="spectator">观战视角</option>
+        </select>
+        <span id="conn-status" class="status-dot">初始化中</span>
+      </div>
+    </div>
+
+    <div class="scorebug" id="scorebug">
+      <div class="team-pill home">
+        <span class="team-tag">主</span>
+        <span id="sb-home-name" class="team-name">主队</span>
+        <strong id="sb-home-score">0</strong>
+      </div>
+      <div class="clock-center">
+        <div class="clock-row">
+          <span id="sb-quarter">第1节</span>
+          <span id="sb-game-clock">12:00.0</span>
+          <span class="sc-pill" id="sb-shot-clock" title="24秒进攻计时">24.0</span>
+        </div>
+        <div class="phase-row">
+          <span id="sb-phase">中圈跳球</span>
+          <span>帧号 <b id="sb-tick">0</b></span>
+          <span id="sb-poss">球权：争球中</span>
+        </div>
+      </div>
+      <div class="team-pill away">
+        <strong id="sb-away-score">0</strong>
+        <span id="sb-away-name" class="team-name">客队</span>
+        <span class="team-tag">客</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <nav class="mobile-nav" aria-label="功能面板切换">
+      <button class="mnav-btn active" data-panel="launch" aria-pressed="true" aria-controls="launch-panel">新建对局</button>
+      <button class="mnav-btn" data-panel="sims" aria-pressed="false" aria-controls="sims-panel">对局列表</button>
+      <button class="mnav-btn" data-panel="coach" aria-pressed="false" aria-controls="coach-panel">临场执教</button>
+      <button class="mnav-btn" data-panel="pbp" aria-pressed="false" aria-controls="tab-pbp">文字战报</button>
+      <button class="mnav-btn" data-panel="box" aria-pressed="false" aria-controls="tab-box">技术统计</button>
+      <button class="mnav-btn" data-panel="diag" aria-pressed="false" aria-controls="tab-diag">系统状态</button>
+    </nav>
+    <p id="action-status" class="action-status" role="status" hidden></p>
+    <section class="center-col">
+      <div class="card court-card" id="court-panel">
+        <div class="court-heading">
+          <h2 id="court-title">比赛球场</h2>
+          <span id="court-status">等待开始模拟</span>
+        </div>
+        <canvas id="court-canvas" aria-label="篮球场与球员位置"></canvas>
+        <div class="scrubber-bar">
+          <div class="scrubber-actions">
+            <button id="btn-play-pause" class="btn-secondary" disabled>播放</button>
+            <button id="btn-live-tail" class="btn-accent hidden">回到实时</button>
+            <label class="inline-select">回放倍率
+              <select id="replay-speed" disabled>
+                <option value="0.5">0.5x 慢放</option>
+                <option value="1" selected>1x 正常</option>
+                <option value="2">2x</option>
+                <option value="4">4x</option>
+              </select>
+            </label>
+          </div>
+          <div class="slider-wrap">
+            <input id="tick-slider" type="range" min="0" max="0" value="0" aria-label="时间轴进度" disabled />
+            <span id="slider-label">0 / 0 帧</span>
+          </div>
+          <div class="scrubber-extra">
+            <label class="inline-check">
+              <input id="chk-debug" type="checkbox" disabled /> 战术复盘叠加层（完赛可用）
+            </label>
+            <div class="dl-links">
+              <a id="dl-replay" class="btn-link hidden" target="_blank">下载录像 .hreplay</a>
+              <a id="dl-frames" class="btn-link hidden" target="_blank">下载帧流 .hframes.zst</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card data-tabs">
+        <div class="tab-bar">
+          <button class="tab active" data-tab="tab-pbp" aria-pressed="true" aria-controls="tab-pbp">实时文字战报</button>
+          <button class="tab" data-tab="tab-box" aria-pressed="false" aria-controls="tab-box">技术统计表</button>
+          <button class="tab" data-tab="tab-diag" aria-pressed="false" aria-controls="tab-diag">节点状态与诊断</button>
+        </div>
+        <div id="tab-pbp" class="tab-pane active">
+          <div id="pbp-list" class="pbp-list">
+            <div class="empty-hint">暂无比赛事件，点击“开始模拟”开启实时推演。</div>
+          </div>
+        </div>
+        <div id="tab-box" class="tab-pane">
+          <div id="box-container" class="box-container">
+            <div class="empty-hint">比赛开始后将实时汇总双方球员数据。</div>
+          </div>
+        </div>
+        <div id="tab-diag" class="tab-pane">
+          <div id="diag-summary" class="diag-summary"></div>
+          <details class="diag-details">
+            <summary>查看原始健康检查数据（JSON）</summary>
+            <pre id="diag-json" class="diag-pre"></pre>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="left-col">
+      <div class="card launcher mobile-active" id="launch-panel" data-mobile-card="launch">
+        <h2>启动对局</h2>
+        <form id="launch-form">
+          <fieldset id="launch-fields" disabled>
+            <div class="form-grid">
+              <label>模拟模式
+                <select id="cfg-mode">
+                  <option value="live">实时直播</option>
+                  <option value="full_trace">完整批量录像</option>
+                  <option value="fast_batch">极速批量统计</option>
+                </select>
+              </label>
+              <label>联赛规则
+                <select id="cfg-rule" required></select>
+              </label>
+              <label>主队
+                <select id="cfg-home" required></select>
+              </label>
+              <label>客队
+                <select id="cfg-away" required></select>
+              </label>
+              <label id="cfg-pace-field">直播推演倍速
+                <select id="cfg-pace">
+                  <option value="1" selected>1× 实时</option>
+                  <option value="2">2×</option>
+                  <option value="4">4×</option>
+                  <option value="5">5×</option>
+                </select>
+              </label>
+              <label>随机种子
+                <input id="cfg-seed" type="number" value="42" min="1" max="9007199254740991" required />
+              </label>
+              <label id="cfg-max-ticks-field" hidden>批量模拟最大帧数
+                <input id="cfg-max-ticks" type="number" value="1200" min="50" max="200000" required disabled />
+              </label>
+            </div>
+            <button id="btn-launch" type="submit" class="btn-primary">开始模拟</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="card coach-panel" id="coach-panel" data-mobile-card="coach">
+        <h2>临场执教控制台</h2>
+        <div id="challenge-banner" class="challenge-banner hidden"></div>
+        <p id="coach-status" class="panel-note">选择进行中的直播后可执教。</p>
+        <fieldset class="coach-controls" id="coach-fields" disabled>
+          <div class="btn-row coach-btns">
+            <button id="btn-timeout" class="btn-accent">叫暂停</button>
+            <button id="btn-challenge" class="btn-warn">发起挑战</button>
+            <button id="btn-withdraw" class="btn-secondary">撤回挑战</button>
+            <button id="btn-forfeit" class="btn-danger">认输弃权</button>
+          </div>
+          <div class="ctrl-row">
+            <select id="coach-play" aria-label="进攻战术"></select>
+            <button id="btn-set-play" class="btn-secondary">切换战术</button>
+          </div>
+          <div class="ctrl-row">
+            <select id="coach-def" aria-label="防守方案"></select>
+            <button id="btn-set-def" class="btn-secondary">切换防守</button>
+          </div>
+          <div class="ctrl-row pace-row">
+            <label class="inline-check">节奏 <input id="coach-pace" type="range" min="10" max="100" value="60" /><span id="coach-pace-val">60</span></label>
+            <label class="inline-check"><input id="coach-press" type="checkbox" /> 全场紧逼</label>
+            <button id="btn-set-pace" class="btn-secondary">应用设置</button>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="card sims-list" id="sims-panel" data-mobile-card="sims">
+        <div class="panel-heading">
+          <h2>对局记录</h2>
+          <button id="btn-refresh-sims" class="btn-secondary" disabled>刷新列表</button>
+        </div>
+        <div id="sims-container" class="sims-container"></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
