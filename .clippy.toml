@@ -1,0 +1,13 @@
+disallowed-types = [
+    { path = "std::collections::HashMap", reason = "Use BTreeMap or fixed arrays for cross-platform determinism" },
+    { path = "std::collections::HashSet", reason = "Use BTreeSet or fixed arrays for cross-platform determinism" },
+]
+disallowed-methods = [
+    { path = "f64::sin", reason = "Use libm::sin in hoops-core" },
+    { path = "f64::cos", reason = "Use libm::cos in hoops-core" },
+    { path = "f64::sqrt", reason = "Use libm::sqrt in hoops-core" },
+    { path = "f64::exp", reason = "Use libm::exp in hoops-core" },
+    { path = "f64::ln", reason = "Use libm::log in hoops-core" },
+    { path = "f64::powf", reason = "Use libm::pow in hoops-core" },
+    { path = "f64::atan2", reason = "Use libm::atan2 in hoops-core" },
+]
