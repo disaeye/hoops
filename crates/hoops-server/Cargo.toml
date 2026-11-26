@@ -1,0 +1,33 @@
+[package]
+name = "hoops-server"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+hoops-core = { path = "../hoops-core" }
+hoops-config = { path = "../hoops-config" }
+hoops-output = { path = "../hoops-output" }
+axum = { workspace = true }
+tokio = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+rayon = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+zstd = { workspace = true }
+zstd-sys = { workspace = true }
+crc32fast = { workspace = true }
+sha2 = { workspace = true }
+futures-util = { workspace = true }
+jsonwebtoken = { workspace = true }
+uuid = { workspace = true }
+bytes = { workspace = true }
+hex = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+thiserror = { workspace = true }
+clap = { workspace = true }
+
+[dev-dependencies]
+http-body-util = "0.1.5"
+tokio-tungstenite = "0.29.0"
